@@ -16,7 +16,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
-   if (typeof testInput == "number") {
+   if (typeof testInput == 'number') {
     return "Is a Number";
    } else if (testInput === "") {
     return "Empty";
@@ -55,7 +55,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
             document.getElementById("launchStatus").style.color = "rgb(65, 159, 106)";
             document.getElementById("fuelStatus").innerHTML = "Fuel level high enough for launch";
             document.getElementById("cargoStatus").innerHTML = "Cargo mass low enough for launch";
-            list.style.visibility = "hidden";
+            list.style.visibility = "visible";
         }
     }
 }
